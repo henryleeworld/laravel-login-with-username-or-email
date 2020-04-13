@@ -1,4 +1,4 @@
-# Laravel 6 透過用戶名稱／E-mail 登入
+# Laravel 7 透過用戶名稱／E-mail 登入
 
 在大部分的情況下，使用者會使用用戶名稱來登入其帳戶，提供使用者可以自行決定進行登入。 
 
@@ -12,7 +12,7 @@ $ git clone
 ```sh
 $ composer install
 ```
-- 產⽣ Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
+- 產生 Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
 ```sh
 $ php artisan key:generate
 ```
