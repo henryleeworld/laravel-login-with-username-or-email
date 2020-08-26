@@ -39,6 +39,11 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+    public function username()
+    {
+        return filter_var(request('username'), FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
+    }
+
     /**
      * Create a new controller instance.
      *
@@ -52,9 +57,8 @@ class LoginController extends Controller
             'username' => 'required',
             'password' => 'required',
         ]);
-  
-        $fieldType = filter_var($request->username, FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
-        if(auth()->attempt(array($fieldType => $input['username'], 'password' => $input['password'])))
+
+        if(auth()->attempt(array($this->username() => $input['username'], 'password' => $input['password'])))
         {
             return redirect()->route('home');
         }else{
