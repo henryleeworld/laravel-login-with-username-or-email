@@ -1,4 +1,4 @@
-# Laravel 7 透過用戶名稱／E-mail 登入
+# Laravel 8 透過用戶名稱／E-mail 登入
 
 在大部分的情況下，使用者會使用用戶名稱來登入其帳戶，提供使用者可以自行決定進行登入。 
 
@@ -20,14 +20,19 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate
 ```
+- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
+```sh
+$ npm install && npm run dev
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/register` 來進行註冊。
+- 完成註冊後，可以經由 `/login` 來進行登入。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/TZx1ggw.png)
+![](https://i.imgur.com/VyaH8F7.png)
 > 建立新的帳號
 
-![](https://i.imgur.com/PhdPjMR.png)
+![](https://i.imgur.com/FbVohWM.png)
 > 使用現有的帳號登入
