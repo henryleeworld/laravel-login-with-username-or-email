@@ -1,4 +1,4 @@
-# Laravel 11 透過使用者名稱／電子郵件登入
+# Laravel 12 透過使用者名稱／電子郵件登入
 
 在大部分的情況下，使用者會使用使用者名稱來登入其帳號，提供使用者可以自行決定進行登入。 
 
@@ -35,8 +35,8 @@ $ npm run build
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/5w2Hei5.png)
+![](https://i.imgur.com/6SvW8bI.png)
 > 建立新的帳號
 
-![](https://i.imgur.com/WPoIOHS.png)
+![](https://i.imgur.com/79nzenB.png)
 > 使用現有的帳號登入
